@@ -10,6 +10,22 @@
     <AssemblyName>trader_app</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\OMEN\Desktop\اكسل السبت\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,7 +46,49 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A38D88775802C3ACBE3C4BDF73A0B63978008666</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>trader_app_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=0.1.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ADGV.0.1.0.10\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyTabs, Version=1.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EasyTabs.1.3.3.0\lib\net40\EasyTabs.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EasyTabs.1.3.3.0\lib\net40\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EasyTabs.1.3.3.0\lib\net40\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedControl, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedControl.2.2.0\lib\net35\PagedControl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,16 +100,429 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TabControl, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TabControl.2.0.1\lib\net35\TabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.25.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.25\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Win32Interop.Dwmapi, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.Dwmapi.1.0.1\lib\Win32Interop.Dwmapi.dll</HintPath>
+    </Reference>
+    <Reference Include="Win32Interop.Gdi32, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.Gdi32.1.0.1\lib\Win32Interop.Gdi32.dll</HintPath>
+    </Reference>
+    <Reference Include="Win32Interop.Kernel32, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.Kernel32.1.0.1\lib\Win32Interop.Kernel32.dll</HintPath>
+    </Reference>
+    <Reference Include="Win32Interop.User32, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.User32.1.0.1\lib\Win32Interop.User32.dll</HintPath>
+    </Reference>
+    <Reference Include="Win32Interop.Uxtheme, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.Uxtheme.1.0.1\lib\Win32Interop.Uxtheme.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BL\Account_AN.cs" />
+    <Compile Include="BL\Account_Class.cs" />
+    <Compile Include="BL\AC_CASH_AT_BANK.cs" />
+    <Compile Include="BL\AC_Cash_in_hand.cs" />
+    <Compile Include="BL\AC_instrument.cs" />
+    <Compile Include="BL\AM_Branch_Class.cs" />
+    <Compile Include="BL\AM_Company_Class.cs" />
+    <Compile Include="BL\AM_Country_Class.cs" />
+    <Compile Include="BL\AM_Currency_Class.cs" />
+    <Compile Include="BL\AM_Distinct_Class.cs" />
+    <Compile Include="BL\AM_Employees_Class.cs" />
+    <Compile Include="BL\AM_Managements_Class.cs" />
+    <Compile Include="BL\AM_Product_type.cs" />
+    <Compile Include="BL\AM_Governorate_Class.cs" />
+    <Compile Include="BL\Class.cs" />
+    <Compile Include="BL\INV_Inventory_Class.cs" />
+    <Compile Include="BL\INV_inventory_group.cs" />
+    <Compile Include="BL\select_query.cs" />
+    <Compile Include="BL\Process_Class.cs" />
+    <Compile Include="BL\Product_Class.cs" />
+    <Compile Include="BL\settings.cs" />
+    <Compile Include="BL\SUP_vendor.cs" />
+    <Compile Include="BL\User_class.cs" />
+    <Compile Include="CU\dgv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CU\dgv.Designer.cs">
+      <DependentUpon>dgv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="DAL\Databas_Class.cs" />
+    <Compile Include="PL\AC\frm_Account.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="PL\AC\frm_Account.Designer.cs">
+      <DependentUpon>frm_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AC\frm_Account_Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\AC\frm_Account_Group.Designer.cs">
+      <DependentUpon>frm_Account_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AC\frm_Account_LMT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\AC\frm_Account_LMT.Designer.cs">
+      <DependentUpon>frm_Account_LMT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AC\frm_Account_request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\AC\frm_Account_request.Designer.cs">
+      <DependentUpon>frm_Account_request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AC\frm_Account_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\AC\frm_Account_type.Designer.cs">
+      <DependentUpon>frm_Account_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AC\Frm_CASH_AT_BANK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\AC\Frm_CASH_AT_BANK.Designer.cs">
+      <DependentUpon>Frm_CASH_AT_BANK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AC\Frm_Cash_in_hand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\AC\Frm_Cash_in_hand.Designer.cs">
+      <DependentUpon>Frm_Cash_in_hand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AC\frm_Daily_Journal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\AC\frm_Daily_Journal.Designer.cs">
+      <DependentUpon>frm_Daily_Journal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\add_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\add_form.Designer.cs">
+      <DependentUpon>add_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\Form_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\Form_Search.designer.cs">
+      <DependentUpon>Form_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\frm_Account_request_dgv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\frm_Account_request_dgv.Designer.cs">
+      <DependentUpon>frm_Account_request_dgv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\Frm_currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\Frm_currency.Designer.cs">
+      <DependentUpon>Frm_currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\frm_Branch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\frm_Branch.Designer.cs">
+      <DependentUpon>frm_Branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\Frm_Campny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\Frm_Campny.Designer.cs">
+      <DependentUpon>Frm_Campny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\frm_Country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\frm_Country.Designer.cs">
+      <DependentUpon>frm_Country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\Form_product_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\Form_product_type.Designer.cs">
+      <DependentUpon>Form_product_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\frm_Distinct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\frm_Distinct.Designer.cs">
+      <DependentUpon>frm_Distinct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\Frm_Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\Frm_Employees.Designer.cs">
+      <DependentUpon>Frm_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\frm_Governorates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\frm_Governorates.Designer.cs">
+      <DependentUpon>frm_Governorates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Am\frm_Managements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Am\frm_Managements.Designer.cs">
+      <DependentUpon>frm_Managements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\INV\add_form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\INV\add_form2.Designer.cs">
+      <DependentUpon>add_form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\INV\Form_Inventory_group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\INV\Form_Inventory_group.Designer.cs">
+      <DependentUpon>Form_Inventory_group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\INV\Form_invantory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\INV\Form_invantory.Designer.cs">
+      <DependentUpon>Form_invantory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\INV\form_INV_sup_ordar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\INV\form_INV_sup_ordar.Designer.cs">
+      <DependentUpon>form_INV_sup_ordar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\INV\frm_INV_Mov_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\INV\frm_INV_Mov_order.Designer.cs">
+      <DependentUpon>frm_INV_Mov_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\INV\frm_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\INV\frm_Product.Designer.cs">
+      <DependentUpon>frm_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\INV\frm_product_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\INV\frm_product_Category.Designer.cs">
+      <DependentUpon>frm_product_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\login.designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\order_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\order_frm.Designer.cs">
+      <DependentUpon>order_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SUP\frm_IAS_PORDER_TYPES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SUP\frm_IAS_PORDER_TYPES.Designer.cs">
+      <DependentUpon>frm_IAS_PORDER_TYPES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SUP\frm_PREQ_TYPES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SUP\frm_PREQ_TYPES.Designer.cs">
+      <DependentUpon>frm_PREQ_TYPES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SUP\frm_VENDOR_CLASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SUP\frm_VENDOR_CLASS.Designer.cs">
+      <DependentUpon>frm_VENDOR_CLASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SUP\frm_VENDOR_DEGREE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SUP\frm_VENDOR_DEGREE.Designer.cs">
+      <DependentUpon>frm_VENDOR_DEGREE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SUP\FRM_VENDOR_GROUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SUP\FRM_VENDOR_GROUP.Designer.cs">
+      <DependentUpon>FRM_VENDOR_GROUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SUP\frm_VI_DETAILS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SUP\frm_VI_DETAILS.Designer.cs">
+      <DependentUpon>frm_VI_DETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SUP\FRM_V_DETAILS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SUP\FRM_V_DETAILS.Designer.cs">
+      <DependentUpon>FRM_V_DETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SUP\Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SUP\Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\tast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\tast.Designer.cs">
+      <DependentUpon>tast.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CU\dgv.resx">
+      <DependentUpon>dgv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AC\frm_Account.resx">
+      <DependentUpon>frm_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AC\frm_Account_Group.resx">
+      <DependentUpon>frm_Account_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AC\frm_Account_LMT.resx">
+      <DependentUpon>frm_Account_LMT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AC\frm_Account_request.resx">
+      <DependentUpon>frm_Account_request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AC\frm_Account_type.resx">
+      <DependentUpon>frm_Account_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AC\Frm_CASH_AT_BANK.resx">
+      <DependentUpon>Frm_CASH_AT_BANK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AC\Frm_Cash_in_hand.resx">
+      <DependentUpon>Frm_Cash_in_hand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\AC\frm_Daily_Journal.resx">
+      <DependentUpon>frm_Daily_Journal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\add_form.resx">
+      <DependentUpon>add_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\Form_Search.ar-YE.resx">
+      <DependentUpon>Form_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\Form_Search.resx">
+      <DependentUpon>Form_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\frm_Account_request_dgv.resx">
+      <DependentUpon>frm_Account_request_dgv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\Frm_currency.resx">
+      <DependentUpon>Frm_currency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\frm_Country.resx">
+      <DependentUpon>frm_Country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\Form_product_type.resx">
+      <DependentUpon>Form_product_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\frm_Branch.resx">
+      <DependentUpon>frm_Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\Frm_Campny.resx">
+      <DependentUpon>Frm_Campny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\frm_Distinct.resx">
+      <DependentUpon>frm_Distinct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\Frm_Employees.resx">
+      <DependentUpon>Frm_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\frm_Governorates.resx">
+      <DependentUpon>frm_Governorates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\frm_Managements.resx">
+      <DependentUpon>frm_Managements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\INV\add_form2.resx">
+      <DependentUpon>add_form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\INV\Form_Inventory_group.resx">
+      <DependentUpon>Form_Inventory_group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\INV\Form_invantory.resx">
+      <DependentUpon>Form_invantory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\INV\form_INV_sup_ordar.resx">
+      <DependentUpon>form_INV_sup_ordar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\INV\frm_INV_Mov_order.resx">
+      <DependentUpon>frm_INV_Mov_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\INV\frm_Product.resx">
+      <DependentUpon>frm_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\INV\frm_product_Category.resx">
+      <DependentUpon>frm_product_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\order_frm.resx">
+      <DependentUpon>order_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SUP\frm_IAS_PORDER_TYPES.resx">
+      <DependentUpon>frm_IAS_PORDER_TYPES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SUP\frm_PREQ_TYPES.resx">
+      <DependentUpon>frm_PREQ_TYPES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SUP\frm_VENDOR_CLASS.resx">
+      <DependentUpon>frm_VENDOR_CLASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SUP\frm_VENDOR_DEGREE.resx">
+      <DependentUpon>frm_VENDOR_DEGREE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SUP\FRM_VENDOR_GROUP.resx">
+      <DependentUpon>FRM_VENDOR_GROUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SUP\frm_VI_DETAILS.resx">
+      <DependentUpon>frm_VI_DETAILS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SUP\FRM_V_DETAILS.resx">
+      <DependentUpon>FRM_V_DETAILS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SUP\Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\tast.resx">
+      <DependentUpon>tast.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -60,7 +531,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -70,9 +544,27 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="trader_app_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\انجاز.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Close_16.png" />
+    <None Include="Resources\info1.png" />
+    <None Include="Resources\nformation-.png" />
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
